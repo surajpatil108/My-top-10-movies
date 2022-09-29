@@ -31,18 +31,6 @@ class Movies(db.Model):
     def __repr__(self) -> str:
         return f'Movie: {self.title}, Rank: {self.ranking}'
 
-# new_movie = Movies(
-#                 id=5,
-#                 title = "Kung Fu Hustle",     
-#                 year = 1999
-#                 description = "A very inspiring story",
-#                 rating = 8.5,
-#                 ranking = 3,
-#                 review = "A very good fight in the movie",
-#                 img_url = "https://image.tmdb.org/t/p/original/18BmJuz8LgY5GyiRO6H16hN7iWP.jpg"
-#             )
-# db.session.add(new_movie)
-# db.session.commit()
     
 @app.route("/")
 def home():
